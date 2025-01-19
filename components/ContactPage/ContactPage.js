@@ -49,7 +49,7 @@ export default function ContactSection() {
                             <FaPhone className={styles.icon} /> <a href="tel:08162907958">08162907958</a>
                         </motion.p>
                         <motion.p variants={itemVariants}>
-                            <FaEnvelope className={styles.icon} /> <a href="mailto:ohiagu.chike@gmail.com">ohiagu.chike@gmail.com</a>
+                            <FaEnvelope className={styles.icon} /> <a href="mailto:chikecreates@gmail.com">chikecreates@gmail.com</a>
                         </motion.p>
                         <motion.p variants={itemVariants}>
                             <FaInstagram className={styles.icon} /> <a href="https://www.instagram.com/Mrteddy_O" target="_blank" rel="noopener noreferrer">Mrteddy_O</a>
