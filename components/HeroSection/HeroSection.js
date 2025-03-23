@@ -101,7 +101,7 @@ const Roles = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
-    }, 2000);
+    }, 1100);
 
     return () => clearInterval(interval);
   }, []);
@@ -119,7 +119,7 @@ const Roles = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         //style={roles[currentRoleIndex] === 'Disrupter' ? { color: 'white' } : { color: 'var(--gold)' }}
-        style={{ color: 'white' }}
+        style={{ color: 'var(--gold)' }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
         className={styles.role}

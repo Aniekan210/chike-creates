@@ -16,7 +16,7 @@ const AboutPage = () => {
       {/* About ChikeCreates Studios Section */}
       <div className={styles.aboutStudio}>
         {/* Logo Placeholder */}
-        <div className={styles.logoPlaceholder}>
+        {/*<div className={styles.logoPlaceholder}>
           <Image
             src="/images/logo4.png" // Replace with your logo
             alt="ChikeCreates Studios Logo"
@@ -24,7 +24,7 @@ const AboutPage = () => {
             height={200} // Adjust height as needed
             className={styles.logo}
           />
-        </div>
+        </div>*/}
 
         {/* Write-Up */}
         <div className={styles.studioWriteUp}>
