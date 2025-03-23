@@ -24,6 +24,7 @@
 .textContainer h1 {
   cursor: default;
   width: 100%;
+  color: var(--gold);
 }
 
 .roleDiv {
@@ -36,7 +37,23 @@
   transform: translate(-50%, -50%);
 }
 
+.roleDiv p {
+  font-weight: 600;
+  font-style: bold;
+  font-size: 0.93rem;
+  color: #e1e1e1;
+  width: 100%;
+  cursor: default;
+  padding: 100px 0 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
 .role {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   line-height: 0;
   font-weight: 400;
   cursor: default;
@@ -57,6 +74,18 @@
     font-size: 1.8rem;
     white-space: none;
   }
+
+  .roleDiv p {
+    font-weight: 600;
+    font-style: bold;
+    font-size: 0.87rem;
+    color: #e1e1e1;
+    width: 100%;
+    cursor: default;
+    padding: 75px 0 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -67,6 +96,18 @@
 
   .role {
     font-size: 2.3rem;
+  }
+
+  .roleDiv p {
+    font-weight: 600;
+    font-style: bold;
+    font-size: 0.89rem;
+    color: #e1e1e1;
+    width: 100%;
+    cursor: default;
+    padding: 85px 0 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
   }
 }
 
@@ -79,6 +120,18 @@
   .role {
     font-size: 2.6rem;
   }
+
+  .roleDiv p {
+    font-weight: 600;
+    font-style: bold;
+    font-size: 0.93rem;
+    color: #e1e1e1;
+    width: 100%;
+    cursor: default;
+    padding: 100px 0 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1441px) {
@@ -90,5 +143,17 @@
 
   .role {
     font-size: 3rem;
+  }
+
+  .roleDiv p {
+    font-weight: 600;
+    font-style: bold;
+    font-size: 1.1rem;
+    color: #e1e1e1;
+    width: 100%;
+    cursor: default;
+    padding: 110px 0 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
   }
 }

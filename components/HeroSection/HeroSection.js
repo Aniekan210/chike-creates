@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import styles from './HeroSection.module.css';
 import useDeviceType from '@/hooks/useDeviceType';
 
-const roles = ['Producer', 'Writer', 'Script Doctor', 'Director', 'Disrupter'];
+const roles = ['SCRIPTING', 'DIRECTING', 'PRODUCTION', 'EVENT COVERAGE'];
 
 export default function HeroSection() {
   const [isHovered, setIsHovered] = useState(false);
@@ -23,6 +23,7 @@ export default function HeroSection() {
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
+      transition={{ duration: 0.5, ease: 'easeIn' }}
       className={styles.container}
     >
       <motion.div
@@ -34,45 +35,45 @@ export default function HeroSection() {
           initial={{ y: 0, opacity: 1 }}
           animate={isHovered ? { y: -100, opacity: 0.2 } : { y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
-        >CHIKEZIE TEDDY</motion.h1>
+        >ChikeCreates</motion.h1>
           <motion.h1
             initial={{ y: 0, opacity: 1 }}
             animate={isHovered ? { y: 100, opacity: 0.2 } : { y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: 'easeInOut' }}
-          >OHIAGU-ANANABA</motion.h1></>)}
+          >Studios</motion.h1></>)}
 
         {deviceType === 'desktop' && (<><motion.h1
           initial={{ y: 0, opacity: 1 }}
           animate={isHovered ? { y: -100, opacity: 0.2 } : { y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
-        >CHIKEZIE TEDDY</motion.h1>
+        >ChikeCreates</motion.h1>
           <motion.h1
             initial={{ y: 0, opacity: 1 }}
             animate={isHovered ? { y: 100, opacity: 0.2 } : { y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: 'easeInOut' }}
-          >OHIAGU-ANANABA</motion.h1></>)}
+          >Studios</motion.h1></>)}
 
         {deviceType === 'tablet' && (<><motion.h1
           initial={{ y: 0, opacity: 1 }}
           animate={isHovered ? { y: -85, opacity: 0.2 } : { y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
-        >CHIKEZIE TEDDY</motion.h1>
+        >ChikeCreates</motion.h1>
           <motion.h1
             initial={{ y: 0, opacity: 1 }}
             animate={isHovered ? { y: 85, opacity: 0.2 } : { y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: 'easeInOut' }}
-          >OHIAGU-ANANABA</motion.h1></>)}
+          >Studios</motion.h1></>)}
 
         {deviceType === 'mobile' && (<><motion.h1
           initial={{ y: 0, opacity: 1 }}
           animate={isHovered ? { y: -65, opacity: 0.2 } : { y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
-        >CHIKEZIE TEDDY</motion.h1>
+        >ChikeCreates</motion.h1>
           <motion.h1
             initial={{ y: 0, opacity: 1 }}
             animate={isHovered ? { y: 65, opacity: 0.2 } : { y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: 'easeInOut' }}
-          >OHIAGU-ANANABA</motion.h1></>)}
+          >Studios</motion.h1></>)}
 
         <AnimatePresence>
           {isHovered && (<Roles />)}
@@ -107,13 +108,23 @@ const Roles = () => {
         key={roles[currentRoleIndex]}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        style={roles[currentRoleIndex] === 'Disrupter' ? { color: 'white' } : { color: 'var(--gold)' }}
+        //style={roles[currentRoleIndex] === 'Disrupter' ? { color: 'white' } : { color: 'var(--gold)' }}
+        style={{ color: 'white' }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
         className={styles.role}
       >
         {roles[currentRoleIndex].toUpperCase()}
       </motion.h2>
+      <motion.p
+        key={1}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        Great stories don't start perfect, they just start.
+      </motion.p>
     </motion.div>
   )
 }

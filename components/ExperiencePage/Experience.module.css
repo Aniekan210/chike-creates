@@ -1,13 +1,6 @@
-/* Container styling */
 .container {
-  padding: 50px 40px;
-  color: #fff;
-  height: 100vh; /* Fullscreen height */
-  overflow-y: auto; /* Allow the entire container to scroll if needed */
-  display: flex;
-  flex-direction: column;
+  overflow-x: hidden;
 }
-
 .awardsSection {
   display: flex;
   align-items: flex-start;

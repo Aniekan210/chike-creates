@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: right;
-  z-index: 100000;
+  z-index: 10;
 }
 
 .dropBtn {

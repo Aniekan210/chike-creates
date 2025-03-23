@@ -1,60 +1,135 @@
 /* Container styling */
 .aboutContainer {
   display: flex;
-  flex-direction: row; /* Stack items horizontally by default */
-  max-width: 1300px;
-  padding: 0 30px;
-  overflow-y: auto; /* Allow vertical scrolling */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Align items to the top */
-  gap: 30px;
-  min-height: 100vh; /* Minimum height for the viewport */
-}
-
-/* ImageWrapper and Image styling */
-.imageWrapper {
-  flex: 0 0 auto; /* Ensure the image doesn't stretch inappropriately */
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  justify-content: flex-start;
+  gap: 40px;
   width: 100%;
-  max-width: 400px; /* Limit max width on larger screens */
-  margin-bottom: 20px; /* Add some space below the image */
+  max-width: 1300px;
+  padding: 40px 20px;
 }
 
-.image {
-  border-radius: 10px;
-  object-fit: cover;
-  width: 100%; /* Ensure the image scales with the wrapper */
-  height: auto; /* Maintain aspect ratio */
-  filter: grayscale(100%); /* Initially apply grayscale filter */
-  transition: filter 0.5s ease-in-out; /* Smooth transition for filter effect */
-}
-
-.imageWrapper:hover .image {
-  filter: grayscale(0%); /* Remove grayscale filter on hover */
-}
-
-/* Text Content and its elements styling */
-.textCont {
-  text-align: left;
+/* About ChikeCreates Studios Section */
+.aboutStudio {
   display: flex;
-  flex: 1;
-  padding: 0 20px;
-  flex-flow: column nowrap;
-  overflow-y: visible; /* Allow the text to be fully visible */
-  max-width: 800px; /* Constrain width for readability */
+  flex-direction: row;
+  align-items: center; /* Vertically center the logo and text */
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
 }
 
-/* Heading and Paragraph styling */
-.textCont h1 {
+.logoPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 auto auto;
+  height: 100%; /* Ensure the logoPlaceholder takes the full height */
+}
+
+.logo {
+  width: 350px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.studioWriteUp {
+  flex: 1;
+  text-align: left;
+}
+
+.studioWriteUpHeading {
   font-size: 3rem;
   margin: 0 0 12px 0;
   color: var(--gold);
 }
 
-.textCont p {
+.studioWriteUpText {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  font-family: "Merriweather", serif;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+/* Mission and Vision Statements */
+.missionStatement,
+.visionStatement {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+}
+
+.missionHeading,
+.visionHeading {
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0 10px 0;
+  color: var(--gold);
+}
+
+.missionText,
+.visionText {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  font-family: "Merriweather", serif;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+/* About Chike Section */
+.aboutChike {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.imageWrapper {
+  flex: 0 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.image {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
+}
+
+.imageWrapper:hover .image {
+  filter: grayscale(0%);
+}
+
+.ceoText {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--gold);
+  margin-top: 10px;
+}
+
+.chikeWriteUp {
+  flex: 1;
+  text-align: left;
+}
+
+.chikeWriteUpHeading {
+  font-size: 3rem;
+  margin: 0 0 12px 0;
+  color: var(--gold);
+}
+
+.chikeWriteUpText {
   margin: 15px 0;
   font-size: 1.1rem;
   font-family: "Merriweather", serif;
@@ -64,34 +139,41 @@
 
 /* Mobile Devices: max-width 600px */
 @media (max-width: 600px) {
-  .aboutContainer {
-    flex-direction: column; /* Stack items vertically on mobile */
-    padding: 40px 20px;
+  .aboutStudio,
+  .aboutChike {
+    flex-direction: column;
     align-items: center;
-    height: 100vh; /* Allow the container to grow as needed */
-    overflow-y: auto; /* Enable scrolling on mobile */
+    gap: 20px;
+  }
+
+  .logoPlaceholder {
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    width: 250px; /* Adjust for mobile */
   }
 
   .imageWrapper {
-    width: 100%;
-    max-width: 300px; /* Adjust width for better mobile viewing */
-    margin-bottom: 20px; /* Ensure margin below the image */
+    max-width: 300px;
   }
 
-  .image {
-    filter: grayscale(0%); /* Remove grayscale filter on hover */
-  }
-
-  .textCont {
-    padding: 20px 0 0;
-  }
-
-  .textCont h1 {
+  .studioWriteUpHeading,
+  .chikeWriteUpHeading {
     font-size: 2.5rem;
     text-align: center;
   }
 
-  .textCont p {
+  .missionHeading,
+  .visionHeading {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .studioWriteUpText,
+  .missionText,
+  .visionText,
+  .chikeWriteUpText {
     font-size: 1.2rem;
     text-align: center;
   }
@@ -99,67 +181,89 @@
 
 /* Tablets: min-width 601px and max-width 1024px */
 @media (min-width: 601px) and (max-width: 1024px) {
-  .aboutContainer {
-    padding: 40px;
-    overflow-y: auto;
-    flex-direction: row; /* Keep items side by side */
-    max-height: 85vh;
+  .aboutStudio,
+  .aboutChike {
+    gap: 30px;
+  }
+
+  .logo {
+    width: 300px; /* Adjust for tablets */
   }
 
   .imageWrapper {
-    max-width: 250px; /* Limit the width of the image on tablets */
-    margin-bottom: 0; /* Remove bottom margin on larger screens */
+    max-width: 250px;
   }
 
-  .textCont h1 {
+  .studioWriteUpHeading,
+  .chikeWriteUpHeading {
     font-size: 2.8rem;
   }
 
-  .textCont p {
+  .missionHeading,
+  .visionHeading {
+    font-size: 1.9rem;
+  }
+
+  .studioWriteUpText,
+  .missionText,
+  .visionText,
+  .chikeWriteUpText {
     font-size: 1.1rem;
   }
 }
 
 /* Desktops: min-width 1025px and max-width 1440px */
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .aboutContainer {
-    padding: 50px;
-    max-height: 100vh;
-    overflow-y: auto;
-    flex-direction: row; /* Keep items side by side */
+  .logo {
+    width: 350px;
   }
 
   .imageWrapper {
-    max-width: 300px; /* Adjust the max-width for larger screens */
+    max-width: 300px;
   }
 
-  .textCont h1 {
+  .studioWriteUpHeading,
+  .chikeWriteUpHeading {
     font-size: 3.2rem;
   }
 
-  .textCont p {
+  .missionHeading,
+  .visionHeading {
+    font-size: 2.1rem;
+  }
+
+  .studioWriteUpText,
+  .missionText,
+  .visionText,
+  .chikeWriteUpText {
     font-size: 1.15rem;
   }
 }
 
 /* Large Desktops: min-width 1441px */
 @media (min-width: 1441px) {
-  .aboutContainer {
-    padding: 60px;
-    max-height: 100vh;
-    overflow-y: auto;
-    flex-direction: row; /* Keep items side by side */
+  .logo {
+    width: 400px; /* Adjust for large desktops */
   }
 
   .imageWrapper {
-    max-width: 350px; /* Adjust the max-width for even larger screens */
+    max-width: 350px;
   }
 
-  .textCont h1 {
+  .studioWriteUpHeading,
+  .chikeWriteUpHeading {
     font-size: 3.5rem;
   }
 
-  .textCont p {
+  .missionHeading,
+  .visionHeading {
+    font-size: 2.3rem;
+  }
+
+  .studioWriteUpText,
+  .missionText,
+  .visionText,
+  .chikeWriteUpText {
     font-size: 1.2rem;
   }
 }
