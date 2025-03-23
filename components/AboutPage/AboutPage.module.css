@@ -57,10 +57,6 @@
 .missionStatement,
 .visionStatement {
   width: 100%;
-  max-width: 800px;
-  padding: 30px;
-  border-radius: 10px;
-  background-color: #3939393c;
   text-align: left;
 }
 
@@ -180,6 +176,11 @@
     font-size: 1.2rem;
     text-align: center;
   }
+
+  .missionStatement,
+  .visionStatement {
+    padding: 30px;
+  }
 }
 
 /* Tablets: min-width 601px and max-width 1024px */
@@ -188,6 +189,12 @@
   .aboutChike {
     gap: 30px;
   }
+
+  .missionStatement,
+  .visionStatement {
+    padding: 30px;
+  }
+
 
   .logo {
     width: 300px; /* Adjust for tablets */
@@ -241,6 +248,11 @@
   .chikeWriteUpText {
     font-size: 1.15rem;
   }
+
+  .missionStatement,
+  .visionStatement {
+    padding: 30px 30px 30px 30%;
+  }
 }
 
 /* Large Desktops: min-width 1441px */
@@ -256,6 +268,11 @@
   .studioWriteUpHeading,
   .chikeWriteUpHeading {
     font-size: 3.5rem;
+  }
+
+  .missionStatement,
+  .visionStatement {
+    padding: 30px 30px 30px 35%;
   }
 
   .missionHeading,
