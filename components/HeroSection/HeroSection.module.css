@@ -52,6 +52,7 @@
 }
 
 .role {
+  width: 100%;;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -68,8 +69,8 @@
 /* Responsive Breakpoints */
 @media (max-width: 600px) {
   .textContainer h1 {
-    font-size: 3.1rem;
-    line-height: 3.1rem;
+    font-size: 3.8rem;
+    line-height: 3.8rem;
   }
 
   .role {
@@ -79,14 +80,14 @@
 
   .tagline {
     font-size: 0.87rem;
-    padding: 10px 0 0;
+    padding: 15px;
   }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
   .textContainer h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 4.6rem;
+    line-height: 4.6rem;
   }
 
   .role {
@@ -95,14 +96,14 @@
 
   .tagline{
     font-size: 0.89rem;
-    padding: 20px 0 0;
+    padding: 20px;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .textContainer h1 {
-    font-size: 4.6rem;
-    line-height: 4.6rem;
+    font-size: 5.6rem;
+    line-height: 5.6rem;
   }
 
   .role {
@@ -117,8 +118,8 @@
 
 @media (min-width: 1441px) {
   .textContainer h1 {
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 6.9rem;
+    line-height: 6.9rem;
     max-width: 900px;
   }
 

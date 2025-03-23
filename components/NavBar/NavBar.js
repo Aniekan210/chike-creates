@@ -4,7 +4,6 @@ import { useCurrentPage } from "../CurrentPageProvider"
 import { motion } from 'framer-motion'
 import useDeviceType from '@/hooks/useDeviceType'
 
-
 const NavBar = () => {
   const { currentPage } = useCurrentPage();
 
@@ -16,11 +15,19 @@ const NavBar = () => {
         animate={{ top: 0, opacity: 1, left: '50%', boxShadow: 'none' }}
         transition={{ duration: 0.5, ease: 'easeInOut' }}
       >
-        <NavLink active={false} href='/'>Home</NavLink>
-        <NavLink active={currentPage === '/about'} href='/about'>About</NavLink>
-        <NavLink active={currentPage === '/experience'} href='/experience'>Experience</NavLink>
-        <NavLink active={currentPage === '/works'} href='/works'>Works & Gallery</NavLink>
-        <NavLink active={currentPage === '/contact'} href='/contact'>Contact</NavLink>
+        {/* Placeholder for the logo */}
+        <div className="logo-placeholder">
+          <img src="/images/logo4.png" width={80} alt="Logo" /> {/* Replace with your logo */}
+        </div>
+
+        {/* Navigation links */}
+        <div className="nav-links">
+          <NavLink active={false} href='/'>Home</NavLink>
+          <NavLink active={currentPage === '/about'} href='/about'>About</NavLink>
+          <NavLink active={currentPage === '/experience'} href='/experience'>Experience</NavLink>
+          <NavLink active={currentPage === '/works'} href='/works'>Works & Gallery</NavLink>
+          <NavLink active={currentPage === '/contact'} href='/contact'>Contact</NavLink>
+        </div>
       </motion.div>
     </motion.div>
   )

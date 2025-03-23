@@ -4,12 +4,17 @@ import { useCurrentPage } from "../CurrentPageProvider"
 import { AnimatePresence, motion } from 'framer-motion'
 import { useState } from 'react'
 
-
 const MobileNavBar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
-    <motion.div className={styles.navDiv} >
+    <motion.div className={styles.navDiv}>
+      {/* Placeholder for the logo */}
+      <div className={styles.logoPlaceholder}>
+        <img src="/images/logo4.png" width={80} alt="Logo" /> {/* Replace with your logo */}
+      </div>
+
+      {/* Dropdown button */}
       <motion.button onClick={() => setSidebarOpen(true)} className={styles.dropBtn}>
         <motion.div
           className={styles.dropdown}
@@ -18,6 +23,8 @@ const MobileNavBar = () => {
           transition={{ duration: 0.5, ease: 'easeInOut' }}
         />
       </motion.button>
+
+      {/* Sidebar */}
       <AnimatePresence>
         {sidebarOpen && (<SideBar setSidebarOpen={setSidebarOpen} />)}
       </AnimatePresence>

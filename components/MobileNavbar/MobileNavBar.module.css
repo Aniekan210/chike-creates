@@ -1,8 +1,15 @@
 .navDiv {
   width: 100%;
   display: flex;
-  justify-content: right;
+  justify-content: space-between; /* Align logo to the left and dropdown button to the right */
+  align-items: center; /* Vertically center items */
   z-index: 10;
+  padding: 1.7rem 20px; /* Add padding to the sides */
+}
+
+.logoPlaceholder {
+  display: grid;
+  place-items: center;
 }
 
 .dropBtn {

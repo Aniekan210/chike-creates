@@ -8,9 +8,23 @@
 .navbar {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-between; /* Align logo to the left and nav-links to the right */
   align-items: center;
   z-index: 10;
+  gap: 2px;
+  width: 100%; /* Ensure the navbar takes full width */
+  max-width: 1200px; /* Adjust as needed */
+  padding: 0 20px; /* Add padding to the sides */
+}
+
+.logo-placeholder {
+  display: grid;
+  place-items: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-flow: row nowrap;
   gap: 2px;
 }
 
