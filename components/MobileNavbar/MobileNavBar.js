@@ -7,6 +7,7 @@ import { useState } from 'react'
 const MobileNavBar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
+
   return (
     <motion.div className={styles.navDiv}>
       {/* Placeholder for the logo */}
