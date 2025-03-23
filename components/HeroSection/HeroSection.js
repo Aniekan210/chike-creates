@@ -78,6 +78,16 @@ export default function HeroSection() {
         <AnimatePresence>
           {isHovered && (<Roles />)}
         </AnimatePresence>
+        <motion.p
+        key={1}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className={styles.tagline}
+        transition={{ duration: 0.3 }}
+      >
+        Great stories don't start perfect, they just start.
+      </motion.p>
       </motion.div>
     </motion.div>
   );
@@ -116,15 +126,6 @@ const Roles = () => {
       >
         {roles[currentRoleIndex].toUpperCase()}
       </motion.h2>
-      <motion.p
-        key={1}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.3 }}
-      >
-        Great stories don't start perfect, they just start.
-      </motion.p>
     </motion.div>
   )
 }

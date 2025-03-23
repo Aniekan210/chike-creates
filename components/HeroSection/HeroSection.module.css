@@ -37,14 +37,16 @@
   transform: translate(-50%, -50%);
 }
 
-.roleDiv p {
+.tagline {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   font-weight: 600;
   font-style: bold;
-  font-size: 0.93rem;
   color: #e1e1e1;
   width: 100%;
   cursor: default;
-  padding: 100px 0 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
 }
@@ -75,16 +77,9 @@
     white-space: none;
   }
 
-  .roleDiv p {
-    font-weight: 600;
-    font-style: bold;
+  .tagline {
     font-size: 0.87rem;
-    color: #e1e1e1;
-    width: 100%;
-    cursor: default;
-    padding: 75px 0 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+    padding: 10px 0 0;
   }
 }
 
@@ -98,16 +93,9 @@
     font-size: 2.3rem;
   }
 
-  .roleDiv p {
-    font-weight: 600;
-    font-style: bold;
+  .tagline{
     font-size: 0.89rem;
-    color: #e1e1e1;
-    width: 100%;
-    cursor: default;
-    padding: 85px 0 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+    padding: 20px 0 0;
   }
 }
 
@@ -121,16 +109,9 @@
     font-size: 2.6rem;
   }
 
-  .roleDiv p {
-    font-weight: 600;
-    font-style: bold;
+  .tagline {
     font-size: 0.93rem;
-    color: #e1e1e1;
-    width: 100%;
-    cursor: default;
-    padding: 100px 0 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+    padding: 30px;
   }
 }
 
@@ -145,15 +126,8 @@
     font-size: 3rem;
   }
 
-  .roleDiv p {
-    font-weight: 600;
-    font-style: bold;
+  .tagline {
     font-size: 1.1rem;
-    color: #e1e1e1;
-    width: 100%;
-    cursor: default;
-    padding: 110px 0 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+    padding: 40px;
   }
 }

@@ -74,12 +74,13 @@ const Page = () => {
                 key="logoImage"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                exit={{ x: '100vw', opacity: 0 }}
+                exit={{ x: '-100vw', opacity: 0 }}
                 transition={{ duration: 1, ease: "easeInOut" }}
                 style={{
                   position: 'relative',
-                  width: '250px',
-                  height: '250px',
+                  width: '50vw', // Use viewport width for responsiveness
+                  maxWidth: '250px', // Maximum size
+                  height: 'auto', // Auto height to maintain aspect ratio
                 }}
               >
                 <Image
@@ -87,6 +88,7 @@ const Page = () => {
                   alt="ChikeCreates Studios Logo"
                   width={250 * 1.284}
                   height={250}
+                  layout="responsive" // Ensure the image is responsive
                   style={{
                     objectFit: 'contain',
                   }}

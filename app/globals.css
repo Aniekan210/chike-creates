@@ -54,3 +54,18 @@ button {
   font-family: inherit;
   border: none;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo-container {
+    width: 70vw; /* Adjust logo size for smaller screens */
+    max-width: 200px; /* Adjust maximum size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    width: 80vw; /* Adjust logo size for mobile screens */
+    max-width: 150px; /* Adjust maximum size for mobile screens */
+  }
+}
