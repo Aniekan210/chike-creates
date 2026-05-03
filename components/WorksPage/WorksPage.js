@@ -91,7 +91,7 @@ const worksData = {
     {
       title: "The Stranger (2026)",
       role: "Director, Writer, Producer",
-      url: "https://youtu.be/Onmgam9QKPY?si=9W6lmy9-ILzji29Y",
+      url: "https://www.youtube.com/embed/Onmgam9QKPY?si=n1H3fMkySoPAU8O1",
       id: 9,
     },
   ],
